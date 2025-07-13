@@ -1,0 +1,16 @@
+stages:
+  - build
+  - test
+
+build_website:
+  stage: build
+  script:
+    - echo "Building the website..."
+  artifacts:
+    paths: 
+      - build/
+
+test_artifact:
+  stage: test
+  script:
+    - echo "Testing the artifact..."
